@@ -10,10 +10,9 @@ std::string tokenList[] = {                               //token list which def
 };
 
 void printToken(Token tk){                                         //function which prints elements of object type Token
-    std::cout << "\n";
-    std::cout << "Token Type: " << tokenList[tk.tokenID] << "\n";
-    std::cout << "Token Instance: " << tk.tokenInstance << "\n";
-    std::cout << "Line Number: " << tk.lineNumber << "\n";
+    std::cout << "Token Type: " << tokenList[tk.tokenID] << "\t";
+    std::cout << "Token Instance: " << tk.tokenInstance << "\t";
+    std::cout << "Line Number: " << tk.lineNumber << "\t";
     std::cout << "\n";
 }
 

@@ -102,10 +102,6 @@ Token scanner(std::ifstream &read){                    //In scanner, we evaluate
         if(tempState >=  1000 || tempState < 0 ) {            //if the next state is not a final state, do the following
 
             if (tempState == -2) {                             //if the updated state is an error, return an error token
-                while(!isspace(character)){
-                    word+=character;
-                    read.get(character);
-                }
                 return Token(errorTk, word, line);
             }
             if (tempState == -1) {                               //if the updated state is end of file, return eof token
